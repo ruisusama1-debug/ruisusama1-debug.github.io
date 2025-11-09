@@ -1,0 +1,147 @@
+
+@import url('https://i.pinimg.com/originals/41/a1/41/41a1418dfb27def762b23a4db17a62d7.jpg');
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+/* Fondo animado de La noche estrellada */
+.background {
+  background: url('https://cdn.pixabay.com/photo/2024/07/25/17/30/van-gogh-8921864_1280.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  filter: brightness(70%);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: moveBackground 60s linear infinite;
+}
+
+@keyframes moveBackground {
+  0% { background-position: 0 0; }
+  100% { background-position: -1000px 0; }
+}
+
+/* Encabezado */
+header {
+  text-align: center;
+  padding: 80px 20px 40px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* Columnas de tarjetas */
+.columns {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 40px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  width: 280px;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 18px rgba(225, 255, 0, 0.5);
+}
+
+.card h2 {
+  text-align: center;
+  color: #000000;
+}
+
+.card hr {
+  width: 60px;
+  height: 3px;
+  background: #f5c518;
+  border: none;
+  margin: 10px auto 20px;
+}
+
+.card.yellow {
+  border: 2px solid #f5c518;
+}
+
+.card.yellow h2 {
+  color: #d4a30a;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: #f5c518;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #f5c518;
+}
+
+.Entrar{
+   background: #f5c518;
+  color: #000;
+
+}
+.Entrar:hover {
+ background: #f5c518;
+
+}
+
+.yellow-btn {
+  background: #f5c518;
+  color: #000;
+}
+
+.yellow-btn:hover {
+  background: #edec92;
+}
+#ultra-secret {
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  background: #ff0077;
+  color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ff0077;
+  transition: 0.3s;
+  z-index: 1000;
+}
+
+#ultra-secret:hover {
+  background: #ff3399;
+  box-shadow: 0 0 15px #ff66cc;
+}
+
+
+

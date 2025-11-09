@@ -1,0 +1,42 @@
+body {
+
+  margin: 0;
+  overflow: hidden;
+  background: black;
+  color: white;
+  font-family: Arial, sans-serif;
+
+}
+
+canvas {
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 0;
+
+}
+
+.mensaje {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+
+}
+
+.mensaje h1 {
+
+  font-size: 50px;
+  color: pink;
+
+}
+
+.mensaje p {
+
+  font-size: 30px;
+  color: pink;
+
+}
