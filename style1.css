@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  overflow: hidden;
+  background: #000;
+  color: white;
+}
+
+/* Fondo de la noche estrellada */
+.hero {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background: url("https://th.bing.com/th/id/R.b6cd023da272a60a04a1f937458d7b48?rik=%2f64AG30YXmRQiA&riu=http%3a%2f%2fwww.picgifs.com%2fwallpapers%2fwallpapers%2fvan-gogh%2fwallpaper_van-gogh_animaatjes-22.jpg&ehk=BZJoZ4NPKSx9rCR2Mm7p99WXz4ZdFynrFwTW0gz04F0%3d&risl=&pid=ImgRaw&r=0") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  animation: moveBg 30s linear infinite alternate;
+}
+
+/* Movimiento sutil del fondo */
+@keyframes moveBg {
+  from { background-position: center top; }
+  to { background-position: center bottom; }
+}
+
+/* Oscurecer el fondo con transparencia */
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 30, 0.6);
+  top: 0;
+  left: 0;
+}
+
+/* Contenido principal */
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3em;
+  color: #ffdb4d;
+  font-family: "Brush Script MT", cursive;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 25px;
+}
+
+p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #eaeaea;
+}
+
+/* Botones */
+.button {
+  margin-top: 25px;
+}
+
+.boton {
+padding: 12px 28px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 1em;
+  font-weight: 600;
+  background: #ffd700;
+  color: #000;
+  margin: 0 10px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+.boton:hover {
+  background: #fff;
+  transform: scale(1.05);
+
+}
+
+button.outline {
+  background: transparent;
+  border: 2px solid #ffd700;
+  color: #ffd700;
+}
+
+button.outline:hover {
+  background: #ffd700;
+  color: #000;
+}
